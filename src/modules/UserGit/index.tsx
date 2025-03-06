@@ -100,7 +100,7 @@ export default function UserGit() {
               <Skeleton sx={{marginBottom: -2}} key={index} height={80} />
             ))}
             {!loadUser && (
-              <Box sx={{ overflowY: 'auto', maxHeight: { xs: 'calc(100vh - 350px)', sm: 'calc(100vh - 400px)', md: 'calc(100vh - 320px)', lg: 'calc(100vh - 340px)', xl: 'calc(100vh - 370px)' } }}>
+              <Box sx={{ overflowY: 'auto', maxHeight: { xs: 'calc(100vh - 390px)', sm: 'calc(100vh - 400px)', md: 'calc(100vh - 320px)', lg: 'calc(100vh - 340px)', xl: 'calc(100vh - 370px)' } }}>
                 {usersList.map((user: User, key: number) => (
                   <Collapsible key={key} onClickFunction={() => getRepos(user.login)} title={user.login} sx={{ borderLeft: 4, borderColor: 'primary.main', mb: 2 }} >
                     {loadRepo === user.login && Array.from({ length: 5 }, (_, index) => (
