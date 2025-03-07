@@ -16,21 +16,29 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Not to Forget to create the `.env` file like this
+
+```bash
+REACT_APP_NAME=YOUR APP NAME
+REACT_APP_GITHUB_API=https://api.github.com
+REACT_APP_GITHUB_TOKEN=YOUR_GITHUB_PERSONAL_TOKEN
+```
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## About the Application
 
-To learn more about Next.js, take a look at the following resources:
+This application is made to search for users and repositories on github. You can search all of user that are registered on github and see all repositories that user have.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+There are details part of the application.
+- Frameworks Library using NEXT 
+- Based language using Typescript
+- Using styling based of Material UI, Material UI Icons
+- State management with Redux Toolkit
+- Help for notification handling by React Toastify
+- Consume API github with octokit
+- Adding a Form Handler with Formik & Yup
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployed on Vercel
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This application has Go Live! you can check it now in [https://atask-test-seven.vercel.app/](https://atask-test-seven.vercel.app/)
